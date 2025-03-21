@@ -1,0 +1,37 @@
+/* Estilo del modal */
+.modal-header {
+    background-color: #1E3A8A; /* Azul oscuro para el encabezado */
+    color: white; /* Texto blanco */
+}
+
+.modal-content {
+    background-color: #F3F4F6; /* Gris claro para el cuerpo */
+    color: #111827; /* Texto negro */
+}
+
+.modal-header h5 {
+    color: white; /* Título en blanco */
+}
+
+.modal-footer {
+    background-color: #1E3A8A; /* Azul oscuro para el pie */
+    color: white; /* Texto blanco */
+}
+
+.modal-footer .btn {
+    background-color: #60A5FA; /* Botón en azul claro */
+    color: black; /* Texto del botón en blanco */
+}
+
+.modal-footer .btn:hover {
+    background-color: #B91C1C; /* Cambiar a azul oscuro en hover */
+    color: white;
+}
+
+.btn-close {
+    filter: invert(1); /* Cambia el color a blanco */
+}
+
+.btn-close:hover {
+    filter: invert(0.7); /* Cambia el color al 70% de opacidad en hover */
+}

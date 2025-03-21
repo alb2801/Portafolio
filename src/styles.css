@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+/* Navbar */
+.navbar {
+    background-color: #1E3A8A; /* Azul oscuro */
+}
+
+.nav-link {
+    color: white; /* Texto blanco */
+}
+
+.nav-link:hover {
+    color: #60A5FA; /* Azul claro en hover */
+}
+
+/* Footer */
+footer {
+    background-color: #1E3A8A; /* Azul oscuro */
+    color: white; /* Texto blanco */
+}

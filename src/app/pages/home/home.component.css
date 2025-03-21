@@ -1,0 +1,38 @@
+.card-custom {
+    color: white;
+    border: none !important;
+    background: rgb(96, 165, 250);
+    background: linear-gradient(0deg, rgba(96, 165, 250, 1) 65%, rgba(0, 212, 255, 1) 100%);
+}
+
+.btn-custom {
+    background-color: #1E3A8A;
+    color: white;
+}
+
+.btn-custom-2 {
+    background-color: #1E3A8A;
+    color: white;
+    width: 35%;
+}
+
+.btn:hover {
+    background-color: #2A4BBA;
+    color: white;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.mt-6{
+    margin-top: 4rem;
+}

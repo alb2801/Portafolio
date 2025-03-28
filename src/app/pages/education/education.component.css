@@ -1,0 +1,61 @@
+/* Heredar estilos del home */
+.card-custom {
+    color: white;
+    border: none !important;
+    background: rgb(96, 165, 250);
+    background: linear-gradient(0deg, rgba(96, 165, 250, 1) 65%, rgba(0, 212, 255, 1) 100%);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.mt-6 {
+    margin-top: 4rem;
+}
+
+/* Estilos específicos para education */
+.institution-logo {
+    max-width: 150px;
+    padding: 1rem;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+h5 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: #1E3A8A;
+    margin-bottom: 2rem;
+}
+
+/* Alineación del texto */
+.text-start {
+    text-align: left;
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+    .institution-logo {
+        margin-bottom: 1rem;
+    }
+    
+    .text-start {
+        text-align: center;
+        margin-top: 1rem;
+    }
+}

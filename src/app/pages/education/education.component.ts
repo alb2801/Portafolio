@@ -8,5 +8,5 @@ import { ContactModalComponent } from "../../components/contact-modal/contact-mo
   styleUrl: './education.component.css'
 })
 export class EducationComponent {
-
+  
 }

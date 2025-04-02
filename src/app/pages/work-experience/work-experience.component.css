@@ -1,0 +1,64 @@
+/* Estilos generales */
+.container {
+    padding: 0 2rem;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.mt-6 {
+    margin-top: 4rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+/* Estilos para las tarjetas */
+.card-custom {
+    color: white;
+    border: none !important;
+    background: rgb(96, 165, 250);
+    background: linear-gradient(0deg, rgba(96, 165, 250, 1) 65%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 1rem;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.card h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+}
+
+.card p {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.card a {
+    color: #60A5FA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}

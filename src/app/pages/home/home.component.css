@@ -3,6 +3,17 @@
     border: none !important;
     background: rgb(96, 165, 250);
     background: linear-gradient(0deg, rgba(96, 165, 250, 1) 65%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-custom p {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.card-custom button {
+    margin-top: auto;
 }
 
 .btn-custom {
@@ -35,4 +46,122 @@
 
 .mt-6{
     margin-top: 4rem;
+}
+
+/* Estilos para la imagen de perfil */
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile-image-wrapper {
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos responsivos actualizados */
+@media (max-width: 1200px) {
+    .profile-image-wrapper {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 992px) {
+    .profile-image-wrapper {
+        max-width: 300px;
+    }
+
+    .profile-image-container {
+        margin-bottom: 2rem;
+    }
+
+    /* Ajustes para las cards */
+    .card-custom {
+        height: 100% !important;
+        margin-bottom: 1rem;
+    }
+
+    .btn-custom-2 {
+        width: 45%;
+        margin: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-image-wrapper {
+        max-width: 280px;
+    }
+
+    .btn-custom-2 {
+        width: 80%;
+        margin: 0.5rem auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-image-wrapper {
+        max-width: 250px;
+    }
+
+    .btn-custom-2 {
+        width: 100%;
+        margin: 0.5rem auto;
+    }
+}
+
+@media (max-width: 360px) {
+    .profile-image-wrapper {
+        max-width: 220px;
+    }
+}
+
+/* Ajustes para la altura de las tarjetas en dispositivos móviles */
+@media (max-width: 768px) {
+    .card-custom {
+        height: auto !important;
+        margin-bottom: 1rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Asegura que las tarjetas tengan el mismo alto en desktop */
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .col-md-4 {
+        display: flex;
+    }
+    
+    .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /* Asegura que las cards estén una al lado de la otra */
+    .col-md-6 {
+        padding: 0.5rem;
+    }
+
+    .card-custom {
+        height: 100% !important;
+    }
 }

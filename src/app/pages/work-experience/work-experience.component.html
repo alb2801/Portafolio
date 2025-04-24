@@ -2,84 +2,201 @@
     <h1 class="text-shadow">Experiencia Laboral</h1>
 
     <!-- People Contact -->
-    <div class="row mt-4">
-        <h2 class="text-shadow mt-5 mb-4">People Contact</h2>
+    <div class="row">
+        <h2 class="text-shadow mt-3 mb-4">People Contact</h2>
         <div class="row">
             <!-- Proyecto 1: Formulario de inscripción -->
-            <div class="col-md-4 mb-4">
-                <div class="card p-3 card-custom shadow">
-                    <img src="ruta/a/imagen_formulario_inscripcion.jpg" alt="Formulario de Inscripción"
-                        class="img-fluid rounded">
-                    <h5>Formulario de Inscripción</h5>
-                    <p class="mb-2">
-                        Desarrollé un formulario de inscripción de dos fases para un concurso de la alcaldía de
-                        Manizales,
-                        enfocado en la fidelización de empresas. La primera fase recopila información detallada sobre la
-                        empresa
-                        y su representante legal, mientras que la segunda fase incluye el aviso de privacidad,
-                        declaración de veracidad
-                        y la carga de documentos e imágenes. Implementé una sección administrativa para revisar las
-                        inscripciones,
-                        priorizando las más tempranas, y un módulo estadístico que visualiza la distribución sectorial
-                        de las empresas.
-                        Además, se pueden generar informes en PDF y Excel con los datos registrados.
-                    </p>
-                    <p class="text-sm">
-                        <img src="assets/icons/angular.svg" alt="Angular" width="20" height="20"> Angular,
-                        <img src="assets/icons/bootstrap.svg" alt="Bootstrap" width="20" height="20"> Bootstrap,
-                        <img src="assets/icons/dotnet.svg" alt=".NET" width="20" height="20"> .NET
-                    </p>
-                    <a href="link/al/proyecto1" target="_blank">Ver más</a>
+            <div class="col-12 mb-4">
+                <div class="card p-3 card-custom shadow d-flex flex-row">
+                    <div class="col-5 mt-4">
+                        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-image-container" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                        <img src="assets/images/fide1.webp" class="d-block w-100" alt="Imagen 1">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-image-container" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                        <img src="assets/images/fide2.webp" class="d-block w-100" alt="Imagen 2">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-image-container" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                        <img src="assets/images/fide3.webp" class="d-block w-100" alt="Imagen 3">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-image-container" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                        <img src="assets/images/fide4.webp" class="d-block w-100" alt="Imagen 4">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-image-container" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                        <img src="assets/images/fide5.webp" class="d-block w-100" alt="Imagen 5">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carousel1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carousel1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+
+                            <!-- Indicadores del carrusel -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-7">
+                        <h5>Formulario de Inscripción</h5>
+                        <p class="mb-2">
+                            Desarrollé un formulario de inscripción de dos fases para un concurso de la alcaldía de
+                            Manizales,
+                            enfocado en la fidelización de empresas. La primera fase recopila información detallada
+                            sobre la empresa
+                            y su representante legal, mientras que la segunda fase incluye el aviso de privacidad,
+                            declaración de veracidad
+                            y la carga de documentos e imágenes. Implementé una sección administrativa para revisar las
+                            inscripciones,
+                            priorizando las más tempranas, y un módulo estadístico que visualiza la distribución
+                            sectorial de las empresas.
+                            Además, se pueden generar informes en PDF y Excel con los datos registrados.
+                        </p>
+                        <p class="text-sm">
+                            <img src="assets/icons/angular.svg" alt="Angular" width="20" height="20"> Angular,
+                            <img src="assets/icons/bootstrap.svg" alt="Bootstrap" width="20" height="20"> Bootstrap,
+                            <img src="assets/icons/dotnet.svg" alt=".NET" width="20" height="20"> .NET
+                        </p>
+                    </div>
                 </div>
             </div>
 
             <!-- Proyecto 2: Formulario para app de turismo -->
-            <div class="col-md-4 mb-4">
-                <div class="card p-3 card-custom shadow">
-                    <img src="ruta/a/imagen_formulario_turismo.jpg" alt="Formulario Turismo" class="img-fluid rounded">
-                    <h5>Formulario Turismo</h5>
-                    <p class="mb-2">
-                        Creé un formulario de registro para la app móvil "Manizales del Alma", dividido en dos partes:
-                        la primera recoge información sobre el sector de la empresa, redes sociales y métodos de
-                        reserva,
-                        mientras que la segunda parte incluye el aviso de privacidad y la carga de documentos para
-                        verificar
-                        la legalidad de la empresa, así como imágenes del establecimiento. La parte administrativa es
-                        similar
-                        al proyecto anterior, permitiendo la revisión y gestión de las inscripciones.
-                    </p>
-                    <p class="text-sm">
-                        <img src="assets/icons/angular.svg" alt="Angular" width="20" height="20"> Angular,
-                        <img src="assets/icons/bootstrap.svg" alt="Bootstrap" width="20" height="20"> Bootstrap,
-                        <img src="assets/icons/dotnet.svg" alt=".NET" width="20" height="20"> .NET
-                    </p>
-                    <a href="link/al/proyecto2" target="_blank">Ver más</a>
+            <div class="col-12 mb-4">
+                <div class="card p-3 card-custom shadow d-flex flex-row">
+                    <div class="col-5 mt-4">
+                        <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-image-container" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                        <img src="assets/images/turismo1.png" class="d-block w-100" alt="Imagen 1">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-image-container" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                        <img src="assets/images/turismo2.png" class="d-block w-100" alt="Imagen 2">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-image-container" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                        <img src="assets/images/turismo3.png" class="d-block w-100" alt="Imagen 3">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-image-container" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                        <img src="assets/images/turismo4.png" class="d-block w-100" alt="Imagen 4">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-image-container" data-bs-toggle="modal" data-bs-target="#imageModal">
+                                        <img src="assets/images/turismo5.png" class="d-block w-100" alt="Imagen 5">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carousel2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carousel2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+
+                            <!-- Indicadores del carrusel -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carousel2" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carousel2" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carousel2" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carousel2" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <h5>Formulario Turismo</h5>
+                        <p class="mb-2">
+                            Creé un formulario de registro para la app móvil "Manizales del Alma", dividido en dos
+                            partes:
+                            la primera recoge información sobre el sector de la empresa, redes sociales y métodos de
+                            reserva,
+                            mientras que la segunda parte incluye el aviso de privacidad y la carga de documentos para
+                            verificar
+                            la legalidad de la empresa, así como imágenes del establecimiento. La parte administrativa
+                            es
+                            similar
+                            al proyecto anterior, permitiendo la revisión y gestión de las inscripciones.
+                        </p>
+                        <p class="text-sm">
+                            <img src="assets/icons/angular.svg" alt="Angular" width="20" height="20"> Angular,
+                            <img src="assets/icons/bootstrap.svg" alt="Bootstrap" width="20" height="20"> Bootstrap,
+                            <img src="assets/icons/dotnet.svg" alt=".NET" width="20" height="20"> .NET
+                        </p>
+                        <a href="link/al/proyecto2" target="_blank">Ver más</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Proyecto 3: Centro de monitoreo de género -->
-            <div class="col-md-4 mb-4">
-                <div class="card p-3 card-custom shadow">
-                    <img src="ruta/a/imagen_centro_monitoreo.jpg" alt="Centro de Monitoreo de Género"
-                        class="img-fluid rounded">
-                    <h5>Centro de Monitoreo de Género</h5>
-                    <p class="mb-2">
-                        Desarrollé una página informativa para el Centro de Monitoreo de Género en Manizales, que
-                        presenta
-                        reportes de violencia de género a través de tableros de Power BI, testimonios, un video
-                        explicativo
-                        y una sección para denuncias. Incluye un glosario de términos relacionados con el tema. La
-                        plataforma
-                        cuenta con un panel administrativo para actualizar los tableros, testimonios y el glosario,
-                        asegurando
-                        que la información esté siempre actualizada y accesible.
-                    </p>
-                    <p class="text-sm">
-                        <img src="assets/icons/angular.svg" alt="Angular" width="20" height="20"> Angular,
-                        <img src="assets/icons/bootstrap.svg" alt="Bootstrap" width="20" height="20"> Bootstrap,
-                        <img src="assets/icons/dotnet.svg" alt=".NET" width="20" height="20"> .NET
-                    </p>
-                    <a href="link/al/proyecto3" target="_blank">Ver más</a>
+            <div class="col-12 mb-4">
+                <div class="card p-3 card-custom shadow d-flex flex-row">
+                    <div class="col-4">
+                        <img src="ruta/a/imagen_centro_monitoreo.jpg" alt="Centro de Monitoreo de Género"
+                            class="img-fluid rounded">
+                    </div>
+                    <div class="col-8">
+                        <h5>Centro de Monitoreo de Género</h5>
+                        <p class="mb-2">
+                            Desarrollé una página informativa para el Centro de Monitoreo de Género en Manizales, que
+                            presenta
+                            reportes de violencia de género a través de tableros de Power BI, testimonios, un video
+                            explicativo
+                            y una sección para denuncias. Incluye un glosario de términos relacionados con el tema. La
+                            plataforma
+                            cuenta con un panel administrativo para actualizar los tableros, testimonios y el glosario,
+                            asegurando
+                            que la información esté siempre actualizada y accesible.
+                        </p>
+                        <p class="text-sm">
+                            <img src="assets/icons/angular.svg" alt="Angular" width="20" height="20"> Angular,
+                            <img src="assets/icons/bootstrap.svg" alt="Bootstrap" width="20" height="20"> Bootstrap,
+                            <img src="assets/icons/dotnet.svg" alt=".NET" width="20" height="20"> .NET
+                        </p>
+                        <a href="link/al/proyecto3" target="_blank">Ver más</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -90,9 +207,9 @@
         <h2 class="text-shadow mt-5 mb-4">Asociación de Cable Aéreo de Manizales</h2>
         <div class="col-md-4 mb-4">
             <div class="card p-3 card-custom shadow">
-                <img src="ruta/a/imagen2.jpg" alt="Proyecto Cable Aéreo" class="img-fluid rounded">
-                <h5>Proyecto Cable Aéreo</h5>
-                <p class="mb-2">Descripción del proyecto.</p>
+            <img src="ruta/a/imagen2.jpg" alt="Proyecto Cable Aéreo" class="img-fluid rounded">
+            <h5>Proyecto Cable Aéreo</h5>
+            <p class="mb-2">Descripción del proyecto.</p>
                 <p class="text-sm">
                     <i class="bi bi-file-earmark-code"></i> Python,
                     <i class="bi bi-file-earmark-text"></i> Django
@@ -106,9 +223,9 @@
         <h2 class="text-shadow mt-5 mb-4">Institución Educativa Monseñor Antonio José Giraldo Gómez</h2>
         <div class="col-md-4 mb-4">
             <div class="card p-3 card-custom shadow">
-                <h5>Mejoramiento de la Red</h5>
-                <p class="mb-2">Revisión de cableado y mejoramiento de la red WiFi.</p>
-                <p class="text-sm">Mantenimiento de equipos de cómputo y celulares.</p>
+            <h5>Mejoramiento de la Red</h5>
+            <p class="mb-2">Revisión de cableado y mejoramiento de la red WiFi.</p>
+            <p class="text-sm">Mantenimiento de equipos de cómputo y celulares.</p>
             </div>
         </div>
     </div>
@@ -133,3 +250,32 @@
 
 <!--Modal-->
 <app-contact-modal></app-contact-modal>
+
+<!-- Modal para carrusel -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="modalCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Se llenará dinámicamente -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#modalCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#modalCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <!-- Se llenará dinámicamente -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

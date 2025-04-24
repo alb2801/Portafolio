@@ -38,7 +38,6 @@
 .card img {
     max-width: 100%;
     border-radius: 8px;
-    margin-bottom: 1rem;
 }
 
 .card h5 {
@@ -61,4 +60,109 @@
 
 .card a:hover {
     text-decoration: underline;
+}
+
+.carousel-indicators {
+    top: 105%;
+}
+
+.col-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilos para imágenes clickeables */
+.clickable-image {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.clickable-image:hover {
+    opacity: 0.9;
+}
+
+/* Estilos para el modal */
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-header {
+    border: none;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    z-index: 1050;
+}
+
+.btn-close {
+    background-color: white;
+    opacity: 0.8;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-dialog {
+    max-width: 90%;
+    margin: 1.75rem auto;
+}
+
+.clickable-carousel {
+    cursor: pointer;
+}
+
+/* Ajustes para el carrusel en el modal */
+#modalCarousel .carousel-item img {
+    max-height: 85vh;
+    object-fit: fill;
+}
+
+#modalCarousel .carousel-indicators {
+    bottom: -50px;
+}
+
+#modalCarousel .carousel-control-prev,
+#modalCarousel .carousel-control-next {
+    width: 10%;
+}
+
+/* Añade estos estilos al archivo CSS */
+.carousel-image-container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.carousel-image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease;
+}
+
+.carousel-image-container:hover::after {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Asegúrate de que los controles del carrusel estén por encima */
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 3;
+}
+
+.carousel-indicators {
+    z-index: 3;
+}
+
+/* Ajusta el cursor para los controles */
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-indicators button {
+    cursor: pointer;
 }

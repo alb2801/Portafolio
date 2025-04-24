@@ -1,35 +1,35 @@
 <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid justify-content-center">
-      <a class="navbar-brand text-white" href="#">Alberth Cifuentes</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link text-white me-5" href="https://github.com/alb2801" target="_blank">
-              <i class="bi bi-github"></i> GitHub
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white me-5" href="https://www.linkedin.com/in/alberth-yecid-cifuentes-pulgarin-181aa72a6/" target="_blank">
-              <i class="bi bi-linkedin"></i> LinkedIn
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white me-5" href="https://www.instagram.com/alberth_2801" target="_blank">
-              <i class="bi bi-instagram"></i> Instagram
-            </a>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link btn text-white me-5" data-bs-toggle="modal" data-bs-target="#contactModal">
-              <i class="bi bi-envelope"></i> Contáctame
-            </button>
-          </li>
-        </ul>
-      </div>
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Alberth Cifuentes</a>
+        <button class="navbar-toggler" type="button" (click)="toggleMenu()" [attr.aria-expanded]="isMenuOpen">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" [class.show]="isMenuOpen">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-white me-5" href="https://github.com/alb2801" target="_blank" (click)="closeMenu()">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white me-5" href="https://www.linkedin.com/in/alberth-yecid-cifuentes-pulgarin-181aa72a6/" target="_blank" (click)="closeMenu()">
+                        <i class="bi bi-linkedin"></i> LinkedIn
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white me-5" href="https://www.instagram.com/alberth_2801" target="_blank" (click)="closeMenu()">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white me-5" role="button" data-bs-toggle="modal" data-bs-target="#contactModal" (click)="closeMenu()">
+                        <i class="bi bi-envelope"></i> Contáctame
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
 
 <!-- Modal -->
 <app-contact-modal></app-contact-modal>

@@ -1,12 +1,25 @@
 import { Component } from '@angular/core';
 import { ContactModalComponent } from "../contact-modal/contact-modal.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
-  imports: [ContactModalComponent],
+  standalone: true,
+  imports: [
+    ContactModalComponent,
+    CommonModule
+  ],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  isMenuOpen = false;
 
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
 }

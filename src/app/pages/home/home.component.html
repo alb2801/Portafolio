@@ -1,41 +1,49 @@
 <div class="container text-center mt-6">
-    <h1 class="text-shadow">Alberth Yecid Cifuentes Pulgarin</h1>
-    <h4 class="text-shadow">Ingeniero en Sistemas y Computación - Full Stack Developer</h4>
+    <h1 class="text-shadow mb-3">Alberth Yecid Cifuentes Pulgarin</h1>
+    <h4 class="text-shadow mb-4">Ingeniero en Sistemas y Computación - Full Stack Developer</h4>
 
-    <div class="row mt-4">
-        <div class="col-md-4">
-            <img src="/assets/images/DSC_6247.webp" 
-                 alt="Alberth Cifuentes" 
-                 class="img-fluid rounded-circle shadow" 
-                 style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-        <div class="col-md-4">
-            <div class="card p-3 card-custom h-100 shadow">
-                <h5>¿Quién Soy?</h5>
-                <p>Soy una persona altamente responsable y comprometida, con una fuerte vocación por el aprendizaje
-                    continuo. Me caracterizo por ser servicial, proactivo y cumplir con mis responsabilidades de manera
-                    eficiente. Además, tengo una gran capacidad de adaptación a distintos entornos y dinámicas de
-                    trabajo, lo que me permite integrarme rápidamente en nuevos equipos y afrontar desafíos con
-                    flexibilidad y resolución.</p>
-                <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#contactModal">Contactame
-                    Aquí</button>
+    <div class="row justify-content-center">
+        <!-- Contenedor de imagen -->
+        <div class="col-12 col-lg-4 profile-image-container order-lg-1">
+            <div class="profile-image-wrapper">
+                <img src="/assets/images/DSC_6247.webp" 
+                     alt="Alberth Cifuentes" 
+                     class="profile-image">
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card p-3 card-custom h-100 shadow">
-                <h5>Perfil Profesional</h5>
-                <p> Ingeniero en Sistemas y Computación con experiencia en desarrollo web y móvil, especializado en
-                    .NET, Angular y Flutter. Me destaco por mi habilidad para resolver problemas de manera eficiente,
-                    aprender nuevas tecnologías con rapidez y colaborar en equipos multidisciplinarios. Apasionado por
-                    la creación de soluciones tecnológicas innovadoras, busco optimizar procesos y mejorar la
-                    experiencia del usuario a través de un código limpio y escalable.</p>
-                <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#contactModal">Contactame
-                    Aquí</button>
+        
+        <!-- Contenedor de cards -->
+        <div class="col-12 col-lg-8 order-lg-2">
+            <div class="row">
+                <!-- Card ¿Quién Soy? -->
+                <div class="col-md-6">
+                    <div class="card p-3 card-custom shadow h-100 d-flex flex-column">
+                        <h5>¿Quién Soy?</h5>
+                        <p class="flex-grow-1">Soy una persona altamente responsable y comprometida, con una fuerte vocación por el aprendizaje
+                            continuo. Me caracterizo por ser servicial, proactivo y cumplir con mis responsabilidades de manera
+                            eficiente. Además, tengo una gran capacidad de adaptación a distintos entornos y dinámicas de
+                            trabajo, lo que me permite integrarme rápidamente en nuevos equipos y afrontar desafíos con
+                            flexibilidad y resolución.</p>
+                        <button class="btn btn-custom">Contactame Aquí</button>
+                    </div>
+                </div>
+                <!-- Card Perfil Profesional -->
+                <div class="col-md-6">
+                    <div class="card p-3 card-custom shadow h-100 d-flex flex-column">
+                        <h5>Perfil Profesional</h5>
+                        <p class="flex-grow-1">Ingeniero en Sistemas y Computación con experiencia en desarrollo web y móvil, especializado en
+                            .NET, Angular y Flutter. Me destaco por mi habilidad para resolver problemas de manera eficiente,
+                            aprender nuevas tecnologías con rapidez y colaborar en equipos multidisciplinarios. Apasionado por
+                            la creación de soluciones tecnológicas innovadoras, busco optimizar procesos y mejorar la
+                            experiencia del usuario a través de un código limpio y escalable.</p>
+                        <button class="btn btn-custom">Contactame Aquí</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="mt-5">
+    <div class="mt-2 d-flex flex-column flex-md-row justify-content-center align-items-center">
         <button class="btn btn-custom-2 m-2" routerLink="/education">Formación Académica</button>
         <button class="btn btn-custom-2 m-2" routerLink="/experience">Experiencia</button>
     </div>
